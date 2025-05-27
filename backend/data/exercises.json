@@ -1,0 +1,72 @@
+{
+  "exercises": [
+    {
+      "id": 1,
+      "title": "The Web Awakens – Creating Your First HTML Page",
+      "story": "Every adventure begins somewhere. This one begins with your first-ever HTML page. Let's put it together and start your journey on the web!",
+      "code": "<!DOCTYPE html> <!-- Declares the document type as HTML5 -->\n<html> <!-- Root element of the HTML document -->\n<head> <!-- Contains metadata and title -->\n  <title>My Web Adventure</title> <!-- Title of the webpage displayed on the browser tab -->\n</head>\n<body> <!-- The main content of the webpage -->\n  <!-- This is how you write a comment in HTML -->\n  <!-- Comments are ignored by the browser and used to explain code -->\n <h1>The Journey of HTML Begins</h1> <!-- Main heading for the page -->\n</body> <!-- End of body -->\n</html> <!-- End of HTML document -->"
+    },
+    {
+      "id": 2,
+      "title": "Speak Loud and Clear – Meet the Headings!",
+      "story": "Headings are like signboards on the road. They help you organize your ideas and guide your readers. Time to try out headings from big to small.",
+      "code": "<body> <!-- Starts the body where content is displayed -->\n  <h1>Main Title</h1> <!-- Largest heading -->\n  <h2>Subheading Level 1</h2> <!-- Second largest heading -->\n  <h6>The smallest whisper of a heading</h6> <!-- Smallest heading -->\n</body> <!-- Ends the body -->",
+      "hint": "Try adding <h3> and <h4> between them."
+    },
+    {
+      "id": 3,
+      "title": "The Grocery Scroll – Unleashing Lists",
+      "story": "It's time to organize your pantry and cooking steps using lists! You’ll use both unordered and ordered lists to do this.",
+      "code": "<body>\n  <h2>My Grocery List</h2> <!-- Heading for the grocery list -->\n  <ul> <!-- Unordered list with bullet points -->\n    <li>Milk</li>    <!-- First list item -->\n    <li>Eggs</li>     <!-- Second list item -->\n    <!-- Add your favorite snack here --> \n    <li></li> <!-- ← User adds another list item here -->\n  </ul>\n  <h2>Steps to Make a Sandwich</h2> <!-- Heading for the step-by-step list -->\n  <ol> <!-- Ordered list with numbers -->\n    <li>Take two slices of bread</li>\n    <li>Spread butter or sauce</li>\n    <li>Place your favorite filling</li>\n    <li>Put slices together and enjoy!</li>\n  </ol>\n</body>",
+      "hint": "Use <li> tags to list grocery items and sandwich steps."
+    },
+    {
+      "id": 4,
+      "title": "Picture Perfect – Adding an Image",
+      "story": "Images speak louder than text sometimes. Time to decorate your webpage with an image of your favorite thing!",
+      "code": "<body>\n  <h2>This is My Favorite Animal</h2>  <!-- Heading for the image -->\n  <img src=\"https://unsplash.com/photos/a-girl-takes-a-photo-with-her-camera-oGeVYS5PoEI\" alt=\"A girl with camera\" width=\"300\"> \n  <!-- Image of a girl with camera from Unsplash; replace the URL with your own image link or path -->\n  <!-- Tip for user: Replace the src with a local file path or another image URL from the web -->\n</body>",
+      "hint": "Use <img src=\"...\" alt=\"...\"> to embed your image."
+    },
+    {
+      "id": 5,
+      "title": "The Great Divide – Sections, Classes & Divs",
+      "story": "Think of your webpage like rooms in a house. Sections and divs help organize each room.",
+      "code": "<body>\n  <section class=\"about-me\"> <!-- A semantic section for personal info -->\n    <h2>About Me</h2> <!-- Section title -->\n    <p>I am learning frontend development and loving it!</p> <!-- Description inside the section -->\n  </section>\n  <div class=\"fun-facts\"> <!-- A generic container for extra content -->\n    <h3>Fun Facts</h3> <!-- Heading for fun facts -->\n    <ul> <!-- List of fun facts -->\n      <li>I can solve a Rubik's Cube</li>\n      <li>I love coffee</li>\n      <!-- Add another fun fact about yourself -->\n      <li></li> <!-- ← User fills in their own fact -->\n    </ul>\n  </div>\n</body>"
+    },
+    {
+      "id": 6,
+      "title": "What is CSS?",
+      "story": "Imagine your website is a plain cake — CSS is the frosting and decorations that make it irresistible! CSS (Cascading Style Sheets) controls how your HTML looks, from colors and fonts to layouts and animations. Let’s start by adding some global styles to your webpage to make it visually appealing.",
+      "code": "<!DOCTYPE html>\n<html>\n<head>\n  <title>CSS Basics</title>\n  <style>\n    /* This styles the entire body of the webpage */\n    body {\n      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets a clean font for all text */\n      background-color: #f0f8ff; /* Adds a light blue background */\n      color: #333; /* Sets default text color to dark grey */\n      margin: 20px; /* Adds space around the content */\n    }\n\n    /* Style for all headings */\n    h1, h2 {\n      color: #1e90ff; /* Dodger blue color for headings */\n    }\n  </style>\n</head>\n<body>\n  <h1>Welcome to CSS!</h1>\n  <h2>Making websites beautiful, one style at a time</h2>\n  <p>Notice how the background and text colors change the whole mood of the page.</p>\n</body>\n</html>",
+      "hint": "Use the style tag inside <head> to add CSS and try changing colors or fonts!"
+    },
+    {
+      "id": 7,
+      "title": "Styling Lists Like a Pro",
+      "story": "Lists organize your content like a neat shelf. But plain bullet points are boring! Let’s spice them up with custom colors, spacing, and styles.",
+      "code": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Styled Lists</title>\n  <style>\n    /* Style all unordered lists */\n    ul {\n      list-style-type: square; /* Changes bullets from default circles to squares */\n      padding-left: 20px; /* Adds space on the left */\n      color: green; /* Changes bullet text color */\n      font-weight: bold; /* Makes list items bold */\n    }\n\n    /* Style all list items */\n    li {\n      margin-bottom: 10px; /* Adds space between list items */\n    }\n  </style>\n</head>\n<body>\n  <ul>\n    <li>Learn HTML basics</li>\n    <li>Master CSS styling</li>\n    <li>Build interactive pages</li>\n    <!-- Add your favorite item below -->\n  </ul>\n</body>\n</html>",
+      "hint": "Try different list-style-type values and adjust spacing to make lists easier to read."
+    },
+    {
+      "id": 8,
+      "title": "Perfect Your Navbar",
+      "story": "Your navbar is your website’s compass. Let's style it so users can easily navigate while making it visually sleek.",
+      "code": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Navbar Styling</title>\n  <style>\n    /* Style the navigation bar */\n    nav {\n      background-color: #333; /* Dark background */\n      overflow: hidden; /* Clear floats */\n      padding: 10px 0;\n    }\n\n    /* Style the links inside the navbar */\n    nav a {\n      color: white; /* White text color */\n      text-decoration: none; /* Remove underline */\n      padding: 14px 20px; /* Spacing around links */\n      float: left; /* Align links horizontally */\n      font-weight: bold;\n      font-family: Arial, sans-serif;\n    }\n\n    /* Change link color on hover */\n    nav a:hover {\n      background-color: #575757; /* Dark grey background on hover */\n    }\n  </style>\n</head>\n<body>\n  <nav>\n    <a href=\"#\">Home</a>\n    <a href=\"#\">About</a>\n    <a href=\"#\">Contact</a>\n  </nav>\n</body>\n</html>",
+      "hint": "Use nav and style a tags with hover effects for interactive navigation."
+    },
+    {
+      "id": 9,
+      "title": "Beautiful Sections with Classes and Divs",
+      "story": "Websites are like stories broken into chapters. Sections and divisions (<section>, <div>) help organize content — now let's style them!",
+      "code": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Styled Sections</title>\n  <style>\n    /* Style all sections */\n    section {\n      background-color: #e0f7fa; /* Light cyan background */\n      padding: 15px;\n      margin-bottom: 10px;\n      border-radius: 8px;\n      font-family: 'Verdana', sans-serif;\n    }\n\n    /* Style the about-me section differently using its class */\n    .about-me {\n      border: 2px solid #00796b; /* Teal border */\n    }\n\n    /* Style div containers with class fun-facts */\n    .fun-facts {\n      background-color: #fff3e0; /* Light orange background */\n      padding: 10px;\n      border-radius: 8px;\n      border: 1px solid #ffa726; /* Orange border */\n    }\n  </style>\n</head>\n<body>\n  <section class=\"about-me\">\n    <h2>About Me</h2>\n    <p>I’m learning to build amazing websites with HTML & CSS!</p>\n  </section>\n  <div class=\"fun-facts\">\n    <h3>Fun Facts</h3>\n    <ul>\n      <li>I love coding challenges.</li>\n      <li>Coffee fuels my creativity.</li>\n    </ul>\n  </div>\n</body>\n</html>",
+      "hint": "Use classes to target specific elements for styling with CSS."
+    },
+    {
+      "id": 10,
+      "title": "Colors and Fonts – Making it Your Own",
+      "story": "Now that your structure is set, it’s time to customize the look! Pick your favorite colors and fonts to reflect your personality.",
+      "code": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Personal Style</title>\n  <style>\n    body {\n      font-family: 'Courier New', Courier, monospace;\n      background-color: #282c34;\n      color: #61dafb;\n      margin: 40px;\n    }\n    h1 {\n      font-size: 3em;\n      font-weight: lighter;\n      text-align: center;\n      text-shadow: 2px 2px 4px #000000;\n    }\n    p {\n      font-size: 1.2em;\n      line-height: 1.6;\n      max-width: 600px;\n      margin: auto;\n    }\n  </style>\n</head>\n<body>\n  <h1>My Custom Styled Page</h1>\n  <p>Designing with colors and fonts lets your website tell a story about who you are.</p>\n</body>\n</html>",
+      "hint": "Experiment with background-color, color, font-family, and text-shadow."
+    }
+  ]
+}
