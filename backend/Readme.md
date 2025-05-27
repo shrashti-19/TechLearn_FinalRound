@@ -1,6 +1,9 @@
 🔗 API Endpoints
+
 🔐 Authentication
+
 POST /api/auth/signup
+
 Description: Register a new user.
 
 Request Body:
